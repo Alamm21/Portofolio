@@ -1,0 +1,87 @@
+/* Custom styles */
+.hero {
+  background: linear-gradient(to right, #007bff, #6610f2);
+}
+
+.about, .skills {
+  text-align: center;
+}
+
+.table-responsive {
+  overflow-x: auto; /* Untuk tabel responsif di mobile */
+}
+.logo-img {
+  width: 30px;     /* Lebar lebih kecil */
+  height: auto;    /* Tinggi otomatis agar proporsional */
+  margin-right: 10px;
+  object-fit: contain;
+}
+.form-check {
+  display: inline-block; /* Membuat checkbox+label menjadi satu blok inline */
+  text-align: center;
+}
+
+.form-check.d-inline-block {
+  vertical-align: middle;
+}
+
+.form-check-input {
+  margin-top: 0.3rem; /* sesuaikan agar checkbox vertikal sejajar dengan label */
+}
+/* Make html and body take full height */
+/* Make html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.page-container {
+  flex: 1; /* take full height minus footer */
+  padding: 20px;
+}
+footer {
+  flex-shrink: 0; /* do not shrink */
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+
+@media (max-width: 768px) {
+  .logo-img {
+    width: 25px;   /* Ukuran logo lebih kecil di mobile */
+  }
+}
+     
+@media (max-width: 768px) {
+  .hero img {
+    width: 100px;
+    height: 100px;
+  }
+  .progress {
+    height: 20px;
+  }
+}
+
+/* Agar form-check center dan label di sebelah kanan checkbox */
+
+
+/* Margin agar tombol tidak terlalu ke atas */
+button.btn {
+  min-width: 120px;
+}
+
+.projects-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-page .content-wrapper {
+    flex: 1;   /* ini akan mendorong footer ke bawah */
+}
